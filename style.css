@@ -7,3 +7,30 @@
 html {
   scroll-behavior: smooth;
 }
+
+#navbar {
+  /* position: relative; */
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: auto;
+  background-color: #c5ebee;
+  padding: 0 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+  list-style-type: none;
+}
+
+.button-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  display: inline-block;
+  width: 100px;
+  cursor: pointer;
+}
