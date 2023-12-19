@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #c5ebee;
+  background-color: #14151a;
 }
 
 html {
@@ -16,7 +16,7 @@ html {
   align-items: center;
   height: 100px;
   width: auto;
-  background-color: #96b5b9;
+  background-color: #1a1b20;
   padding: 0 20px;
 }
 
@@ -37,12 +37,14 @@ html {
   display: inline-block;
   width: 100px;
   cursor: pointer;
-  background-color: #96b5b9;
+  background-color: #1a1b20;
+  color: #96a7bd;
 }
 
 .container-full {
   display: flex;
   justify-content: space-evenly;
+  padding: 50px;
   /* flex-direction: column; */
 }
 
@@ -53,23 +55,31 @@ html {
 
 .fakta {
   display: flex;
-  /* justify-content: space-evenly; */
+  justify-content: space-between;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  padding: 20px;
-  margin: 100px 0 0 0;
+  color: #96a7bd;
+  padding: 25px;
+  margin: 75px 0 0 0;
 }
 
 #bilder {
   display: flex;
   flex-direction: column;
 }
+.pic {
+  display: flex;
+  border: 10px solid #444659;
+  border-radius: 15px;
+}
 
 img {
   display: flex;
-  padding: 50px 0 0 25px;
+  background-color: transparent;
+  margin: 10px;
 }
 
 a {
   background-color: transparent;
+  color: #444659;
 }
