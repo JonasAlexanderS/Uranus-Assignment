@@ -41,33 +41,27 @@ html {
   color: #96a7bd;
 }
 
+a {
+  background-color: transparent;
+  color: #444659;
+}
+
 .container-full {
   display: flex;
   justify-content: space-evenly;
   padding: 50px;
-  /* flex-direction: column; */
 }
 
 .container-pics {
   width: 250px;
   height: max-content;
 }
-
-.fakta {
-  display: flex;
-  justify-content: space-between;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  color: #96a7bd;
-  padding: 25px;
-  margin: 75px 0 0 0;
-}
-
 #bilder {
   display: flex;
   flex-direction: column;
 }
-.pic {
+
+.picture {
   display: flex;
   border: 10px solid #444659;
   border-radius: 15px;
@@ -79,7 +73,12 @@ img {
   margin: 10px;
 }
 
-a {
-  background-color: transparent;
-  color: #444659;
+.fakta {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: #96a7bd;
+  padding: 25px;
+  margin: 75px 0 0 0;
 }
