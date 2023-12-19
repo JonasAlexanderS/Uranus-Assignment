@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #c5ebee;
 }
 
 html {
@@ -9,21 +10,24 @@ html {
 }
 
 #navbar {
-  /* position: relative; */
-  position: sticky;
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100px;
   width: auto;
-  background-color: #c5ebee;
+  background-color: #96b5b9;
   padding: 0 20px;
+}
+
+.uranus-logo {
+  max-height: 100%;
+  background-color: transparent;
 }
 
 .buttons {
   display: flex;
   justify-content: center;
-  gap: 3px;
   list-style-type: none;
 }
 
@@ -33,4 +37,39 @@ html {
   display: inline-block;
   width: 100px;
   cursor: pointer;
+  background-color: #96b5b9;
+}
+
+.container-full {
+  display: flex;
+  justify-content: space-evenly;
+  /* flex-direction: column; */
+}
+
+.container-pics {
+  width: 250px;
+  height: max-content;
+}
+
+.fakta {
+  display: flex;
+  /* justify-content: space-evenly; */
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  padding: 20px;
+  margin: 100px 0 0 0;
+}
+
+#bilder {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  display: flex;
+  padding: 50px 0 0 25px;
+}
+
+a {
+  background-color: transparent;
 }
