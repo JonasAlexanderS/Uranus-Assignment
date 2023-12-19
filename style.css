@@ -8,7 +8,7 @@
 html {
   scroll-behavior: smooth;
 }
-
+/* Navbar Styling */
 #navbar {
   position: relative;
   display: flex;
@@ -41,38 +41,42 @@ html {
   color: #96a7bd;
 }
 
+/* Link styling */
 a {
   background-color: transparent;
   color: #444659;
 }
-
+/* Styling til hele siden */
 .container-full {
   display: flex;
   justify-content: space-evenly;
   padding: 50px;
 }
 
-.container-pics {
-  width: 250px;
-  height: max-content;
-}
-#bilder {
-  display: flex;
-  flex-direction: column;
-}
-
-.picture {
-  display: flex;
-  border: 10px solid #444659;
-  border-radius: 15px;
-}
-
-img {
+/* Bilde styling */
+.logo {
   display: flex;
   background-color: transparent;
   margin: 10px;
 }
 
+.container-pics {
+  width: 250px;
+  height: max-content;
+}
+
+#alle-bilder {
+  display: flex;
+  flex-direction: column;
+}
+
+.enkelt-bilder {
+  display: flex;
+  border: 10px solid #444659;
+  border-radius: 15px;
+}
+
+/* Faktatekst styling */
 .fakta {
   display: flex;
   justify-content: space-between;
