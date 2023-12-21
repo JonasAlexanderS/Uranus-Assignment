@@ -51,7 +51,8 @@ a {
   display: flex;
   justify-content: space-evenly;
   padding: 50px;
-  overflow: none;
+  max-width: 100%;
+  min-width: 20%;
 }
 
 /* Bilde styling */
@@ -61,13 +62,15 @@ a {
 }
 
 .container-pics {
-  width: 250px;
+  max-width: 100%;
+  min-width: 25%;
   height: max-content;
 }
 
 #alle-bilder {
   display: flex;
   flex-direction: column;
+  overflow: none;
 }
 
 .enkelt-bilder {
@@ -78,12 +81,23 @@ a {
 }
 
 /* Faktatekst styling */
-.fakta {
+.fakta-tekst {
   display: flex;
   justify-content: space-between;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   color: #96a7bd;
+  max-width: 50ch;
+  min-width: 50ch;
   padding: 25px;
-  margin: 75px 0 0 0;
+  margin: 10%;
 }
+
+#fakta {
+  overflow: none;
+}
+
+/* ul {
+  max-width: 50ch;
+  min-width: 50ch;
+} */
