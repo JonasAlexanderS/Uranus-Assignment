@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+<<<<<<< HEAD
   font-family: "Trispace", sans-serif;
 }
 
@@ -18,11 +19,15 @@
   --Turquoise: #7eeff7;
   --White: #e6e5e5;
 
+=======
+  background-color: #14151a;
+>>>>>>> origin/main
 }
 
 html {
   scroll-behavior: smooth;
 }
+<<<<<<< HEAD
 
 /* Animations */
 @keyframes rotate {
@@ -48,11 +53,17 @@ html {
 #navbar {
   /* position: relative; */
   position: sticky;
+=======
+/* Navbar Styling */
+#navbar {
+  position: relative;
+>>>>>>> origin/main
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100px;
   width: auto;
+<<<<<<< HEAD
   background-color: var(--Light-Blue);
   padding: 0 20px;
 }
@@ -61,6 +72,20 @@ html {
   display: flex;
   justify-content: center;
   gap: 3px;
+=======
+  background-color: #1a1b20;
+  padding: 0 20px;
+}
+
+.uranus-logo {
+  max-height: 100%;
+  background-color: transparent;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+>>>>>>> origin/main
   list-style-type: none;
 }
 
@@ -70,6 +95,7 @@ html {
   display: inline-block;
   width: 100px;
   cursor: pointer;
+<<<<<<< HEAD
 }
 
 
@@ -115,14 +141,31 @@ a {
   color: var(--Dark-Gray);
 }
 
+=======
+  background-color: #1a1b20;
+  color: #96a7bd;
+}
+
+/* Link styling */
+a {
+  background-color: transparent;
+  color: #444659;
+}
+>>>>>>> origin/main
 /* Styling til hele siden */
 .container-full {
   display: flex;
   justify-content: space-evenly;
+<<<<<<< HEAD
   padding: 0px;
   max-width: 100%;
   min-width: 20%;
   margin: 60px 0;
+=======
+  padding: 50px;
+  max-width: 100%;
+  min-width: 20%;
+>>>>>>> origin/main
 }
 
 /* Bilde styling */
@@ -134,18 +177,29 @@ a {
 .container-pics {
   max-width: 100%;
   min-width: 25%;
+<<<<<<< HEAD
+=======
+  height: max-content;
+>>>>>>> origin/main
 }
 
 #alle-bilder {
   display: flex;
   flex-direction: column;
   overflow: none;
+<<<<<<< HEAD
   width: 350px;
+=======
+>>>>>>> origin/main
 }
 
 .enkelt-bilder {
   display: flex;
+<<<<<<< HEAD
   border: 10px solid var(--Dark-Gray);
+=======
+  border: 10px solid #444659;
+>>>>>>> origin/main
   border-radius: 15px;
   margin: 10px;
 }
@@ -156,18 +210,26 @@ a {
   justify-content: space-between;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
+<<<<<<< HEAD
   color: var(--Gray);
+=======
+  color: #96a7bd;
+>>>>>>> origin/main
   max-width: 50ch;
   min-width: 50ch;
   padding: 25px;
   margin: 10%;
+<<<<<<< HEAD
   width: 100px;
+=======
+>>>>>>> origin/main
 }
 
 #fakta {
   overflow: none;
 }
 
+<<<<<<< HEAD
 
 /* Third Page */
 #third-page {
@@ -236,3 +298,9 @@ footer {
   background: linear-gradient(var(--Purple), var(--Dark-Blue));
   border-top: 1px solid var(--Dark-Blue);
 }
+=======
+/* ul {
+  max-width: 50ch;
+  min-width: 50ch;
+} */
+>>>>>>> origin/main
