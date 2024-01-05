@@ -3,7 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Om Uranus</title>
+    <title>Uranus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Trispace:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="img/x-icon" href="images/uranuslogo2.png" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,18 +25,145 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
-    <div id="navbar">
-      <img
-        src="Bilder/uranuslogo2.png"
-        alt="Logo of Uranus"
-        class="uranus-logo"
-      />
+    <!-- 1. Side -->
+    <section id="first-page">
+    <!-- Navbar -->
+      <div id="navbar">
+      <img src="images/uranuslogo2.png" alt="Logo of Uranus" />
       <ul class="buttons">
-        <li class="button-text"><a href="index.html"></a>Hjem</a></li>
-        <li class="button-text"><a href="fakta.html">Fakta</a></li>
+        <li class="button-text">Hjem</li>
+        <li class="button-text">Fakta</li>
         <li class="button-text">Bilder</li>
       </ul>
     </div>
+    
+    <!-- Main content -->
+    <main>
+        <div class="first-page">
+          <div class="img-div">
+            <img
+              id="uranus-img"
+              src="images/Uranus-5.svg"
+              alt="pic-of-uranus"
+            />
+          </div>
+          <div>
+            <img id="astronaut" src="images/astronaut.png" alt="astronaut" />
+          </div>
+          <div class="title-div">
+            <h1 id="title">Uranus</h1>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Side -->
+      <section>  
+      <!-- Beholder til hele siden -->
+        <div class="container-full">
+              <!-- Beholder til bildene -->
+          <div class="container-pics">
+            <div id="alle-bilder">
+              <img
+                src="https://raw.githubusercontent.com/Jonas-Kodehode/Uranus-Assignment/main/Bilder/uranus1.jpg
+                "
+                alt="Picture of Uranus"
+                class="enkelt-bilder"
+              />
+              <img
+                src="https://raw.githubusercontent.com/Jonas-Kodehode/Uranus-Assignment/main/Bilder/uranus2.jpg"
+                alt="Picture of Uranus"
+                class="enkelt-bilder"
+              />
+              <img
+                src="https://raw.githubusercontent.com/Jonas-Kodehode/Uranus-Assignment/main/Bilder/uranus3.png"
+                alt="Picture of Uranus"
+                class="enkelt-bilder"
+              />
+              <img
+                src="https://raw.githubusercontent.com/Jonas-Kodehode/Uranus-Assignment/main/Bilder/uranus4.jpeg"
+                alt="Picture of Uranus"
+                class="enkelt-bilder"
+              />
+            </div>
+        </div>
+        <!-- Beholder til faktatekst -->
+        <div id="fakta">
+          <ul>
+            <li class="fakta-tekst">
+              <p>
+                Uranus består av vann, metan og ammoniakkvæsker over en liten
+                steinete kjerne. Atmosfæren er laget av hydrogen og helium, som
+                Jupiter og Saturn, men den inneholder også metan. Metanet gjør
+                Uranus blå.
+              </p>
+            </li>
+            <li class="fakta-tekst">
+              <p>
+                Uranus har også svake ringer. De indre ringene er smale og mørke.
+                De ytre ringene er klart fargede og lettere å se. Lik Venus,
+                roterer Uranus i motsatt retning av de fleste andre planeter. Og i
+                motsetning til noen annen planet, roterer Uranus på siden.
+              </p>
+            </li>
+            <li class="fakta-tekst">
+              <p>
+                Uranus er omgitt av et sett av 13 ringer. Uranus er en iskjempe (i
+                stedet for en gasskjempe). Den består hovedsakelig av flytende
+                ismaterialer over en fast kjerne.
+              </p>
+            </li>
+            <li class="fakta-tekst">
+              <p>
+                Selv om den er lengre fra solen, er Neptun faktisk kaldere enn
+                Uranus. Uranus' atmosfære er en av de kaldeste i solsystemet med
+                en minimumstemperatur på -224 grader Celsius. Denne kjølige
+                temperaturen er delvis på grunn av mangelen på indre varme i
+                motsetning til andre gassgiganter.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section> 
+
+      <!-- 3. Side -->
+      <section id="third-page">
+        <div class="gallery">
+          <h1 id="gallery-title">Foto Galleri</h1>
+          <div class="container">
+            <button class="btn-left" onclick="nextImage()"></button>
+            <div id="photos">
+              <div class="photos">
+                <!-- <img
+                id="uranus-blue"
+                src="images/Uranus-blue.webp"
+                alt="blue-uranus"
+              /> -->
+              </div>
+            </div>
+            <button class="btn-right" onclick="prevImage()"></button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>Uranus &copy; 2024</p>
+    </footer>
+    
+    <!-- Some JS -->
+    <script>
+      function prevImage() {
+        alert("Work in progress.");
+      }
+      
+      function nextImage() {
+        alert("Work in progress.");
+      }
+      </script>
+      
   </body>
 </html>
