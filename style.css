@@ -2,8 +2,237 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Trispace", sans-serif;
+}
+
+:root {
+  --Black: #181718;
+  --Gunmetal: #00272b;
+  --Dark-Gray: #444659;
+  --Gray: #96a7bd;
+  --Dark-Green: #062726;
+  --Dark-Purple: #16030e;
+  --Purple: #320c22;
+  --Dark-Blue: #03021a;
+  --Light-Blue: #c5ebee;
+  --Turquoise: #7eeff7;
+  --White: #e6e5e5;
+
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Animations */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-1600px);
+
+  to {
+    transform: translateX(0);
+  }
+  }
+}
+
+/* Navbar */
+#navbar {
+  /* position: relative; */
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: auto;
+  background-color: var(--Light-Blue);
+  padding: 0 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+  list-style-type: none;
+}
+
+.button-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  display: inline-block;
+  width: 100px;
+  cursor: pointer;
+}
+
+
+/* First Page */
+#first-page {
+  background-image: url("Images/space.avif");
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 240px;
+  border-bottom: 10px solid var(--Dark-Gray);
+}
+
+.first-page {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+}
+
+#astronaut {
+  height: 100px;
+  margin-right: -1000px;
+  animation: rotate 8s linear infinite, slideInLeft 1.5s ease-in;
+}
+
+.img-div {
+  margin-top: 90px;
+  animation: rotate 100s linear infinite;
+}
+
+.title-div {
+  font-size: 70px;
+  color: var(--White);
+  text-shadow: 1px 1px 100px var(--Turquoise);
+}
+
+
+/* Second Page */
+/* Link styling */
+a {
+  background-color: transparent;
+  color: var(--Dark-Gray);
+}
+
+/* Styling til hele siden */
+.container-full {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px;
+  max-width: 100%;
+  min-width: 20%;
+  margin: 60px 0;
+}
+
+/* Bilde styling */
+.logo {
+  display: flex;
+  background-color: transparent;
+}
+
+.container-pics {
+  max-width: 100%;
+  min-width: 25%;
+}
+
+#alle-bilder {
+  display: flex;
+  flex-direction: column;
+  overflow: none;
+  width: 350px;
+}
+
+.enkelt-bilder {
+  display: flex;
+  border: 10px solid var(--Dark-Gray);
+  border-radius: 15px;
+  margin: 10px;
+}
+
+/* Faktatekst styling */
+.fakta-tekst {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: var(--Gray);
+  max-width: 50ch;
+  min-width: 50ch;
+  padding: 25px;
+  margin: 10%;
+  width: 100px;
+}
+
+#fakta {
+  overflow: none;
+}
+
+
+/* Third Page */
+#third-page {
+  border-top: 10px solid var(--Purple);
+  background-color: var(--Gunmetal);
+  text-align: center;
+  padding: 180px;
+}
+
+#gallery-title {
+  text-align: center;
+  font-size: 50px;
+  color: #e6e5e5;
+  text-shadow: 1px 1px 100px var(--Turquoise);
+  padding: 20px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+#uranus-blue {
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+button {
+  width: 0;
+  margin-top: 150px;
+  height: 0;
+  border-style: solid;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+
+.btn-left {
+  border-width: 25px 50px 25px 0;
+  border-color: var(--Dark-Green) var(--Dark-Purple) var(--Dark-Green) var(--Dark-Green);
+}
+
+.btn-right {
+  border-width: 25px 0 25px 50px;
+  border-color: var(--Dark-Green) var(--Dark-Green) var(--Dark-Green) var(--Dark-Purple);
+}
+
+.photos {
+  border: 5px solid var(--Purple);
+  border-radius: 20px;
+  width: 100px;
+  height: 380px;
+  padding: 190px 400px;
+  margin-bottom: 20px;
+  background-image: url("images/first-pic-gallery.svg");
+  background-size: cover;
+}
+
+/* Footer */
+footer {
+  padding: 30px;
+  text-align: center;
+  color: #e6e5e5;
+  text-shadow: 0.5px 0.5px var(--Black);
+  background: linear-gradient(var(--Purple), var(--Dark-Blue));
+  border-top: 1px solid var(--Dark-Blue);
 }
